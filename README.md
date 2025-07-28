@@ -1,4 +1,4 @@
-# Quantitative Analysis of News Data for Oil Price Prediction
+# Quantitative Analysis of News Data for Oil Price Movement Prediction
 
 This repository contains the full end-to-end pipeline for a quantitative research project aimed at identifying and evaluating a predictive signal ("alpha") for WTI Crude Oil price movements based on unstructured financial news data.
 
