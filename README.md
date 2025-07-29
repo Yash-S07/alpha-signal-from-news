@@ -2,7 +2,7 @@
 
 This repository contains the full end-to-end pipeline for a quantitative research project aimed at identifying and evaluating a predictive signal ("alpha") for WTI Crude Oil price movements based on unstructured financial news data.
 
-The project follows a rigorous, professional-grade workflow, from custom data sourcing and sophisticated feature engineering to robust, walk-forward backtesting. The final conclusion is a nuanced analysis of the signal's statistical significance versus its practical, real-world trading viability.
+In this project I handled everything from sourcing the data to running a realistic walk-forward backtest. My main focus was on exploring the gap between a signal that's statistically significant and one that's actually practical for real-world trading.
 
 -----
 
