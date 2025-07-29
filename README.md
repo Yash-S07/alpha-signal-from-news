@@ -91,7 +91,7 @@ python Feature_Extraction.py
 To run the final, most rigorous analysis that produces the walk-forward P\&L and Sharpe Ratio:
 
 ```bash
-python backtest_with_walk_forward.py
+python Backtest_with_walk_forward.py
 ```
 
 -----
