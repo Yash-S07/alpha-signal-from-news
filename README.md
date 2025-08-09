@@ -1,9 +1,6 @@
 # Quantitative Analysis of News Data for Oil Price Movement Prediction
 
 This repository contains the full end-to-end pipeline for a quantitative research project aimed at identifying and evaluating a predictive signal ("alpha") for WTI Crude Oil price movements based on unstructured financial news data.
-
-In this project I handled everything from sourcing the data to running a realistic walk-forward backtest. My main focus was on exploring the gap between a signal that's statistically significant and one that's actually practical for real-world trading.
-
 -----
 
 ## Project Narrative & Key Findings
@@ -52,16 +49,15 @@ The pipeline is organized into a series of modular Python scripts, each responsi
   * Uses **`sklearn.model_selection.TimeSeriesSplit`** to ensure the model is always trained on past data to predict future events.
   * Aggregates performance metrics (Precision, Recall, F1-Score) across all folds to provide a reliable estimate of the model's predictive power.
 
-### **`05_backtest_with_walk_forward.py`** (The capstone script)
+### **`05_backtest_with_walk_forward.py`** (
 
-  * Implements the industry-standard validation technique for time-series strategies.
   * Uses **`sklearn.model_selection.TimeSeriesSplit`** to create multiple training/testing folds, ensuring the model is always trained on past data to predict the future.
   * For each fold:
       * Trains a new LightGBM model.
       * Generates predictions on the test set.
       * Runs a **vectorized backtest** on the predictions, correctly calculating returns and applying transaction costs only when a trade occurs to avoid lookahead bias.
   * Aggregates the P\&L from all folds into a single, continuous equity curve.
-  * Calculates and reports the final, robust **Annualized Sharpe Ratio** and total cumulative return.
+  * Calculates and reports the final **Annualized Sharpe Ratio** and **total cumulative return**.
 
 -----
 
